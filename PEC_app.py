@@ -1077,4 +1077,6 @@ def serve_react(path):
         return send_from_directory(REACT_BUILD_DIR, 'index.html')
 
 if __name__ == '__main__':
-    app.run()
+    print("WARNING: This is a development server. Do not use it in a production deployment.")
+    print("For production, run: gunicorn --config gunicorn.conf.py wsgi:app")
+    app.run(debug=True)
