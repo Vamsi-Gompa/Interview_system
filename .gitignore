@@ -235,7 +235,7 @@ dist/
 dist/
 
 # React build output
-build/
+# build/ - commented out to include frontend build in repo
 
 # Temporary folders
 tmp/
@@ -285,8 +285,8 @@ bower_components
 
 # Application specific files
 uploads/
-*.csv
-*.json
+# *.csv - commented out to include data files
+# *.json - commented out to include config files
 !package.json
 !package-lock.json
 
