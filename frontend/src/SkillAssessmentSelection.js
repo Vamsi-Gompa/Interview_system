@@ -11,7 +11,7 @@ function SkillAssessmentSelection() {
     useEffect(() => {
         const isLoggedIn = localStorage.getItem('isLoggedIn');
         if (!isLoggedIn) {
-            alert('Please login first to access the system.');
+            // alert('Please login first to access the system.');
             navigate('/login');
             return;
         }
@@ -51,6 +51,7 @@ function SkillAssessmentSelection() {
     }
 
     return (
+
         <div className="dropdown-content" style={{ minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: '#fff', borderRadius: 16, boxShadow: '0 4px 24px #0002', maxWidth: 500, margin: '3rem auto', padding: '2.5rem 2rem', color: '#232327' }}>
             <button className="back-button" onClick={() => navigate('/')} style={{ position: 'absolute', top: 20, left: 20, padding: '8px 18px', background: '#222', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', boxShadow: '0 2px 8px #0002' }}>← Back</button>
             <h1 style={{ color: '#2196F3', marginBottom: 24, fontWeight: 700, fontSize: 32, letterSpacing: 1 }}>Your Scheduled Skill Assessments</h1>

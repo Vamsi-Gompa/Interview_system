@@ -17,7 +17,7 @@ export default function Navbar() {
         <nav className='navbar'>
 
             <div className='logo'>
-                <h1>edu.<span className="ai">AI</span></h1>
+                <Link to='/'> <h1>edu.<span className="ai">AI</span></h1></Link>
             </div>
 
             <div className='menu'>

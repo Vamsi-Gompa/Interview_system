@@ -34,7 +34,7 @@ function Login() {
 
   return (
     <>
-      <button className="back-button" onClick={() => navigate(-1)} style={{ position: 'absolute', top: 20, left: 20, padding: '8px 18px', background: '#222', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', boxShadow: '0 2px 8px #0002' }}>← Back</button>
+      <button className="back-button" onClick={() => navigate('/')} style={{ position: 'absolute', top: 20, left: 20, padding: '8px 18px', background: '#222', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', boxShadow: '0 2px 8px #0002' }}>← Back</button>
       <div className="form-container">
         <p className="title">Welcome back</p>
         <form className="form" onSubmit={handleSubmit}>
